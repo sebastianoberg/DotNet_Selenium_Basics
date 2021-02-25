@@ -10,7 +10,7 @@
 
 2. Same basic flow as the first test BUT implemented using Page Object Model (POM). As you will see this test is way easier to follow.
 
-##Other advantages of "POM" is: 
+Other advantages of "POM" are: 
 * It way more clean and understandable - Less code, dedicated and shared code.
 * Easy to maintain - you always know where to change your code. For example locators and elements.
 * Easy to find and follow in the UI. Page Object are essentially the different parts of your website.
