@@ -3,9 +3,11 @@
 ## For testers and QA's Selenium is an important tool when looking for new assignments/jobs, I hope this repo can inspire testers & QA's to learn how to use Selenium.
 
 **There are two tests, and they both do the same. First test is:**
+
 1. Basic flow implemented not using any particular pattern. The test steps are just run through, up and down. 
 
 **Second one is more intuitive:**
+
 2. Same basic flow as the first test BUT implemented using Page Object Model (POM). As you will see this test is way easier to follow.
 
 #Other advantages of "POM" is: 
