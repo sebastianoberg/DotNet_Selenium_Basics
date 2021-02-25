@@ -1,42 +1,49 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
-using OpenQA.Selenium.Support.UI;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 
 namespace SeleniumTests.PageObjectModel
 {
     public class StartPage
     {
         private readonly string collectorUrl = "https://www.collector.se/";
-        private readonly WebDriverWait wait;
+        private readonly IWebDriver _driver;
 
-        private IWebDriver _driver;
-
+        // Constructor which is called when we create a new instance of StartPage. Ie. new StartPage(). Driver is the same as our test class so we passed that in: new StartPage(driver)..
         public StartPage(IWebDriver driver)
         {
             _driver = driver;
         }
 
-        [FindsBy(How = How.LinkText, Using = "Privat")]
-        private readonly IWebElement menuOptionPrivat;
-
-        [FindsBy(How = How.CssSelector, Using = "button.cui-button:nth-child(3)")]
-        private readonly IWebElement consentBtn;
-
+        // After defining our constructor we define methods..
         public void GoToStartPage()
         {
             _driver.Navigate().GoToUrl(collectorUrl);
         }
 
+        // More methods, or I guess we could call it functionality.. Note that this method returns a another page object.
         public PrivatePage GoToPrivatPage()
         {
-            menuOptionPrivat.Click();
+            var privatPage = _driver.FindElement(By.LinkText("Privat"));
+            privatPage.Click();
             return new PrivatePage(_driver);
         }
 
-        [System.Obsolete]
+        // And even more functionality! 
         public void ClickConsentBtnIfVisible()
         {
-            wait.Until(ExpectedConditions.ElementToBeClickable(consentBtn)).Click();
+            var consentButton = _driver.FindElement(By.CssSelector("button.cui-button:nth-child(3)"));
+            var cookieModal = _driver.FindElement(By.XPath("/html/body/div[1]/div[1]/div/div[1]/div"));
+
+            Assert.IsTrue(consentButton.Displayed);
+            Assert.IsTrue(cookieModal.Displayed);
+
+            if (consentButton != null)
+            {
+                consentButton.Click();
+            }
+
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
         }
     }
 }

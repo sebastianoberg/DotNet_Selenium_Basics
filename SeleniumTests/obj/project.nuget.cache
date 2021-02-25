@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "k323fNwYmQ32GeeKQU8rUbvn070N4jB4E2Ppk/Z9Sg6lh36mh9Fw4Mey/0qzppTTIcwn1mzYI3DnxU9FycsESw==",
+  "dgSpecHash": "kb2T6kKbol+JyYXeM7ApICwvwBj0p/m4DYkdgTMIizUh8+iJ42Uy1TskxqZhmKNfvZf0TjTZ4FVcJdr0zquLjQ==",
   "success": true,
   "projectFilePath": "/Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/SeleniumTests.csproj",
   "expectedPackageFiles": [
     "/Users/sebastianoberg/.nuget/packages/coverlet.collector/1.2.0/coverlet.collector.1.2.0.nupkg.sha512",
+    "/Users/sebastianoberg/.nuget/packages/dotnetseleniumextras.pageobjects/3.11.0/dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
+    "/Users/sebastianoberg/.nuget/packages/dotnetseleniumextras.pageobjects.core/3.12.0/dotnetseleniumextras.pageobjects.core.3.12.0.nupkg.sha512",
+    "/Users/sebastianoberg/.nuget/packages/dotnetseleniumextras.pageobjects.core.linq/1.0.0/dotnetseleniumextras.pageobjects.core.linq.1.0.0.nupkg.sha512",
+    "/Users/sebastianoberg/.nuget/packages/dotnetseleniumextras.waithelpers/3.11.0/dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "/Users/sebastianoberg/.nuget/packages/microsoft.codecoverage/16.5.0/microsoft.codecoverage.16.5.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.csharp/4.3.0/microsoft.csharp.4.3.0.nupkg.sha512",
     "/Users/sebastianoberg/.nuget/packages/microsoft.net.test.sdk/16.5.0/microsoft.net.test.sdk.16.5.0.nupkg.sha512",
@@ -69,6 +73,7 @@
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.net.sockets/4.3.0/system.net.sockets.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.objectmodel/4.3.0/system.objectmodel.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.reflection/4.3.0/system.reflection.4.3.0.nupkg.sha512",
+    "/Users/sebastianoberg/.nuget/packages/system.reflection.dispatchproxy/4.4.0/system.reflection.dispatchproxy.4.4.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.reflection.emit/4.3.0/system.reflection.emit.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.reflection.emit.ilgeneration/4.3.0/system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.reflection.emit.lightweight/4.3.0/system.reflection.emit.lightweight.4.3.0.nupkg.sha512",

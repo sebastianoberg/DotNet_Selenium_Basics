@@ -6,6 +6,9 @@
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/SeleniumTests.runtimeconfig.dev.json
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/SeleniumTests.dll
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/SeleniumTests.pdb
+/Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/SeleniumExtras.PageObjects.dll
+/Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/SeleniumExtras.PageObjects.Linq.dll
+/Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/SeleniumExtras.WaitHelpers.dll
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -19,6 +22,8 @@
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll
+/Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/WebDriver.Support.dll
+/Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/WebDriver.dll
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CoreUtilities.resources.dll
@@ -84,7 +89,6 @@
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-/Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/obj/Debug/netcoreapp3.1/SeleniumTests.csprojAssemblyReference.cache
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/obj/Debug/netcoreapp3.1/SeleniumTests.AssemblyInfoInputs.cache
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/obj/Debug/netcoreapp3.1/SeleniumTests.AssemblyInfo.cs
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/obj/Debug/netcoreapp3.1/SeleniumTests.csproj.CoreCompileInputs.cache
@@ -92,5 +96,3 @@
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/obj/Debug/netcoreapp3.1/SeleniumTests.dll
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/obj/Debug/netcoreapp3.1/SeleniumTests.pdb
 /Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/obj/Debug/netcoreapp3.1/SeleniumTests.genruntimeconfig.cache
-/Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/WebDriver.dll
-/Users/sebastianoberg/Repos/DotNet_Selenium/SeleniumTests/bin/Debug/netcoreapp3.1/WebDriver.Support.dll

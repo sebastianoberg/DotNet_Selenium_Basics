@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -11,64 +8,57 @@ namespace SeleniumTests
     [TestClass]
     public class UnitTest1
     {
-        private readonly string collectorUrl = "https://www.collector.se/";
+        private static string collectorUrl = "https://www.collector.se/";
 
         [TestMethod]
         public void BasicSeleniumFlow()
         {
             IWebElement okConsentButton;
-            IWebElement siteHeader;
             IWebElement privateNavigationOption;
+            IWebElement menuHeader;
 
-            IEnumerable<string> menuOptions = new List<string>() { "Privat", "Företag", "Om Collector" };
-            IEnumerable<string> actualMenuOptions = new List<string>();
-
-
+            // You can find Chrome Driver here: https://sites.google.com/a/chromium.org/chromedriver/downloads
+            // Pass "." as argument when creating the ChromeDriver. By doing that we will look for chromedriver.exe in the current folder.
             using (var driver = new ChromeDriver("."))
             {
+                // This is a basic selenium flow, navigating the webapage of Collector Bank.
+                // The flow is straight forward, no POM pattern, so the test is hard to follow. Even harder to maintain as it might grow.
                 driver.Navigate().GoToUrl(collectorUrl);
 
-                okConsentButton = driver.FindElementByCssSelector("button.cui-button:nth-child(3)");
+                okConsentButton = driver.FindElement(By.XPath("/html/body/div[1]/div[1]/div/div[1]/div/div/button"));
 
                 if (okConsentButton.Displayed == true)
                 {
                     okConsentButton?.Click();
                 }
 
-                siteHeader = driver.FindElement(By.Id("logo"));
                 privateNavigationOption = driver.FindElementByLinkText("Privat");
-
-                IReadOnlyCollection<IWebElement> allElements = driver.FindElements(By.ClassName("menu"));
-
-                foreach (IWebElement element in allElements)
-                {
-                    actualMenuOptions.Append(element.Text.ToString());
-
-                    System.Diagnostics.Debug.WriteLine(element.Text);
-                }
-
                 privateNavigationOption.Click();
+
+                menuHeader = driver.FindElement(By.CssSelector(".hero>nav:nth-child(1) > a:nth-child(1)"));
+                Assert.IsTrue(menuHeader.Text == "Privat");
             }
         }
 
         [TestMethod]
         public void SeleniumFlowUsingPageObjectModel()
         {
-
+            // Using our PageObjects (PrivatePage and StartPage) we can create tests that are easy to extend, maintain and read.
+            // Way easier to read than the test above? Both tests do the same. 
             using (var driver = new ChromeDriver("."))
             {
+                // create instance of page object StartPage
                 StartPage home = new StartPage(driver);
+                // Navigate StartPage using our defined methods..
                 home.GoToStartPage();
-                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+                // Keep on navigating...
                 home.ClickConsentBtnIfVisible();
+
+                // Create instance of PrivatePage..
                 PrivatePage privat = home.GoToPrivatPage();
+                // And navigate using our methods.
                 Assert.IsTrue(privat.isMenuHeaderPrivat());
             }
         }
-
-        //private static bool ListsContainAMatchingValue(IEnumerable<string> listA, IEnumerable<string> listB)
-        //{
-        //    return listA.Any(x => listB.Contains(x));
-        //}
     }
 }
