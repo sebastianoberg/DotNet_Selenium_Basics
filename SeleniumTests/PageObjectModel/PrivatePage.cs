@@ -4,7 +4,7 @@ namespace SeleniumTests.PageObjectModel
 {
     public class PrivatePage
     {
-        // Instance variable available to the whole class, and instance for that matter.
+        // Instance variable.
         private IWebDriver _driver;
 
         // Constructor to call when creating a new instance of "PrivatePage".

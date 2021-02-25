@@ -8,7 +8,7 @@ namespace SeleniumTests
     [TestClass]
     public class UnitTest1
     {
-        private static string collectorUrl = "https://www.collector.se/";
+        private readonly string collectorUrl = "https://www.collector.se/";
 
         [TestMethod]
         public void BasicSeleniumFlow()
