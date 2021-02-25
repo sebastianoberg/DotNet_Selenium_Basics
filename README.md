@@ -5,7 +5,7 @@
 **There are two tests, and they both do the same. First test is:**
 1. Basic flow implemented not using any particular pattern. The test steps are just run through, up and down. 
 
-**Second one is more intuitive: **
+**Second one is more intuitive:**
 2. Same basic flow as the first test BUT implemented using Page Object Model (POM). As you will see this test is way easier to follow.
 
 #Other advantages of "POM" is: 
